@@ -1,0 +1,80 @@
+body {
+  background-color: #008080;
+}
+
+.minesweeper-cell {
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: #a2a2a2;
+  font-weight: bolder;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.minesweeper-cell__closed:active {
+  background-color: #808080;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-left: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.minesweeper-row {
+  white-space: nowrap;
+}
+
+.minesweeper-cell__clicked {
+  border: 1px solid #929292;
+}
+
+.minesweeper-cell__flagged {
+  background-image: url(./images/flag.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.minesweeper-cell--M {
+  background-image: url(./images/mine.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.minesweeper-cell--1 {
+  color: blue;
+}
+
+.minesweeper-cell--2 {
+  color: green;
+}
+
+.minesweeper-cell--3 {
+  color: red;
+}
+
+.minesweeper-cell--4 {
+  color: purple;
+}
+
+.minesweeper-cell--5 {
+  color: maroon;
+}
+
+.minesweeper-cell--6 {
+  color: turquoise;
+}
+
+.minesweeper-cell--7 {
+  color: black;
+}
+
+.minesweeper-cell--8 {
+  color: gray;
+}
