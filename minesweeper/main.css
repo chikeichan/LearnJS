@@ -2,6 +2,10 @@ body {
   background-color: #008080;
 }
 
+.minesweeper {
+  margin: 12px;
+}
+
 .minesweeper-cell {
   width: 25px;
   height: 25px;
@@ -47,34 +51,42 @@ body {
   background-position: center center;
 }
 
-.minesweeper-cell--1 {
+.minesweeper-cell--1:before {
+  content: '1';
   color: blue;
 }
 
-.minesweeper-cell--2 {
+.minesweeper-cell--2:before {
+  content: '2';
   color: green;
 }
 
-.minesweeper-cell--3 {
+.minesweeper-cell--3:before {
+  content: '3';
   color: red;
 }
 
-.minesweeper-cell--4 {
+.minesweeper-cell--4:before {
+  content: '4';
   color: purple;
 }
 
-.minesweeper-cell--5 {
+.minesweeper-cell--5:before {
+  content: '5';
   color: maroon;
 }
 
-.minesweeper-cell--6 {
+.minesweeper-cell--6:before {
+  content: '6';
   color: turquoise;
 }
 
-.minesweeper-cell--7 {
+.minesweeper-cell--7:before {
+  content: '7';
   color: black;
 }
 
-.minesweeper-cell--8 {
+.minesweeper-cell--8:before {
+  content: '8';
   color: gray;
 }
